@@ -1,0 +1,52 @@
+{
+  "case_id": "rg80f",
+  "instrument": "Ibanez RG80F",
+  "pickups": "Fishman Fluence Open Core Classic 8-string neck and bridge",
+  "baseline_goal": {
+    "selector": "3-way neck / both / bridge",
+    "volume_push_pull": "V1/V2 for both pickups, with Voice 2 desired when pushed in",
+    "tone_push_pull": "Voice 3 / single-coil mode",
+    "mini_toggle": "Bypass and isolate unused leads",
+    "pickup_pcb": "Leave pickup-bottom solder bridges and pads untouched"
+  },
+  "sources": [
+    {
+      "title": "Fishman Fluence Open Core Classic 8-String Humbucker Pickups",
+      "url": "https://fishman.com/dp/fluence-open-core-classic-8-string-humbucker-pickups/",
+      "location": "Support & Downloads → Wiring Diagrams"
+    },
+    {
+      "title": "Fishman Classic Open Core 1xVol 1xT Toggle Switch 9V",
+      "url": "https://fishman.com/wp-content/uploads/2025/02/Fluence_Classic_Open_Core_1xVol_1xT_Toggle_Switch_9V.pdf",
+      "location": "Page 1, Controls, pickup PCB revision labels and selector diagram",
+      "scope": "The supplied image shows two 25k push-pulls, a three-position neck/both/bridge selector, and a 9 V battery. The volume pulls for Voice 2 and the tone pulls for Voice 3. The desired pushed-in Voice 2 differs from this diagram. The depicted pickup revisions and selector terminals still need checking against the RG80F hardware.",
+      "reviewed_upload": {
+        "filename": "Vik Fishman WIring (sub 3-way toggle).png",
+        "sha256": "dce9c6c4a3e6c5c819dc27cb4d45cec06a78fe36f599c3824d85c2733838bf10",
+        "locations": [
+          "Controls and 25k pot labels",
+          "Neck Rev 4.1 and bridge Rev 5.1 labels",
+          "3-position selector and output jack"
+        ]
+      }
+    },
+    {
+      "title": "Fishman Fluence Open Core Install Guide",
+      "url": "https://fishman.com/wp-content/uploads/2025/02/Fluence-Open-Core-Install-Guide.pdf#page=7",
+      "location": "Printed pp. 6–8, Connection Points & Functions items 2–4",
+      "scope": "For the configuration described, Voice 3 takes precedence when its select input is grounded, even if Voice 2 is also selected. With the factory solder jumper intact, Voice 3 uses the inner coils for the neck/bridge pair. Verify applicability to the installed revisions and confirm behavior on the bench."
+    },
+    {
+      "title": "Fishman technical support correspondence, October 19–20, 2026",
+      "access": "Private correspondence. This entry is a paraphrase. Consult the original replies before PCB work.",
+      "location": "October 19 reply on the pickup-bottom solder jumper and October 20 replies on independent Voice 3 and coil selection",
+      "scope": "For the separate inner/outer coil selection goal, Fishman described removing a solder jumper on the pickup PCB to access pads. The reply described CT to ground for inner coils and CT to H for outer coils, with Voice 3 controlled separately. Fishman did not supply a single diagram for that exact custom control arrangement. This is conditional guidance for that project phase, not a baseline step."
+    }
+  ],
+  "verification_needed": [
+    "Confirm the PCB revisions and actual 3-way selector terminal map.",
+    "Confirm which push-pull contacts close when pushed in and pulled.",
+    "Check Voice 3 with both volume settings. In the proposed layout, volume pushed in and tone pulled is the state that requests both Voice 2 and Voice 3.",
+    "For later independent coil switching, verify both PCB revisions and the applicable support diagrams before changing any solder jumper."
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "case_id": "steggy",
+  "instrument": "Fender American Professional Stratocaster, passive V-Mod SSS",
+  "selector": "Free-Way 5B5-01, B004, SSS Parallel Series Scheme B 1V/1T",
+  "controls": "250k master volume and 250k master tone. The middle pot is outside the signal path. Verify any separate ground junction there.",
+  "sources": [
+    {
+      "title": "Free-Way Blade schematics index",
+      "url": "https://www.freewayswitch.com/schematics-blade/",
+      "location": "5B5-01 → 3 Pickups & 2 Pots"
+    },
+    {
+      "title": "Free-Way 5B5-01 3-pickup/2-pot manufacturer schematics",
+      "url": "https://www.freewayswitch.com/app/download/8112261315/5B5-01+3PU+2Pot+Part1.pdf?t=1693907521#page=2",
+      "location": "PDF page 2, Scheme B004, July 2018",
+      "scope": "The supplied PDF was checked. Page 2 is B004 Scheme B 1V/1T for passive SSS. Page 1 is B002 Scheme A and page 3 is B006 HSS. Use the front view to identify pickup combinations and the reverse view to identify solder terminals.",
+      "mirror_url": "https://www.rockinger.com/media/pdf/8e/83/2f/37016_3PU2Pot.pdf#page=2",
+      "reviewed_upload": {
+        "filename": "5B5-01 3PU 2Pot Part1(1).pdf",
+        "sha256": "cda43e77a16e4b34776157c688756f512f12fd83240eb14ee74131352d982d4e",
+        "locations": [
+          "Page 2, B004 heading",
+          "Page 2, front-view charts for positions 1–5 and 6–10",
+          "Page 2, reverse-view wiring diagram"
+        ]
+      }
+    }
+  ],
+  "verification_needed": [
+    "Use the B004 page and the actual switch markings before mapping terminals.",
+    "Check both banks against the front-view position chart and use the reverse view for the solder terminals.",
+    "Review pickup return routing and grounding against B004, including shielding and switch metalwork.",
+    "Verify both master controls and all ten positions. Check whether the unused middle pot has any connection into the signal path."
+  ],
+  "b004_positions_from_page_2": {
+    "1": "Bridge",
+    "2": "Bridge + middle in parallel",
+    "3": "Middle",
+    "4": "Middle + neck in parallel",
+    "5": "Neck",
+    "6": "Bridge + middle + neck in series",
+    "7": "Bridge + middle + neck in parallel",
+    "8": "Bridge + neck in series",
+    "9": "Bridge + neck in parallel",
+    "10": "Middle + neck in series"
+  }
+}

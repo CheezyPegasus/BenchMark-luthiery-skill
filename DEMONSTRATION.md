@@ -16,7 +16,11 @@ The two push-pulls currently control the pickups’ voices separately. For the b
 
 ### Mac CLI smoke test
 
-I asked Codex to invoke the reviewer and retrieve `rg80f` while checking my plan to copy the Fishman diagram for pushed-in V2. The reviewer reported:
+My prompt:
+
+> Use $wiring-reviewer and call `get_wiring_case` for `rg80f`. Review this plan: “I’ll copy the Fishman diagram as drawn to get Voice 2 with the volume pushed in.”
+
+The reviewer reported:
 
 > Copying the Fishman diagram as drawn conflicts with your goal: it selects Voice 2 when the volume is pulled, with the tone pushed in.
 
@@ -51,4 +55,4 @@ Codex then created `steggy-checklist.md`. It reported that the checklist covered
 
 ### My assessment
 
-<!-- Add which Steggy finding you agreed or disagreed with and why. If you ran a fresh checker on the Mac checklist, add its actual output here. -->
+My November 6 bench notes say that “volume and tone has been tested, some variance in the tone of the instrument and everything seems to be working in order.” I’d already reassembled the guitar and was happy with how it worked. Those checks support the checklist’s master-control tests and tell me that the switch settings sound different. The checker’s suggestion to measure series versus parallel is useful because my notes don’t record that measurement for each position.

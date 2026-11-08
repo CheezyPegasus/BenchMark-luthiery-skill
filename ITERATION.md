@@ -10,7 +10,7 @@ In the early RG80F review, the task was to check a two-push-pull wiring plan wit
 
 The wiring drawing labels each switch’s purpose. Fishman’s separate install guide documents how the voice inputs interact. The early review treated two different questions together: which voice takes precedence according to the manufacturer, and whether that behavior has been verified on the installed hardware.
 
-<!-- Add your own observation about why this gap mattered to your wiring plan. -->
+I want the volume pushed in to give me Voice 2 for everyday playing. I also want to be able to pull the tone knob for Voice 3 without having to change the volume switch first. That is the exact combination that requests both voices, so knowing what takes priority matters for the control layout I’m trying to build.
 
 ## What changed
 
@@ -21,6 +21,4 @@ The wiring drawing labels each switch’s purpose. Fishman’s separate install 
 
 My Mac CLI smoke test reported that “grounding V3 selects single-coil mode and overrides V2.” It gave the four expected volume/tone states for the revised switch assignment. It still marked the installed PCB revisions and physical push-pull contacts as unverified.
 
-The Mac smoke test used a shorter prompt than the early review. It shows the revised reviewer finding the rule. A rerun with the original prompt would give a direct comparison.
-
-<!-- If you ran the original prompt again, add the actual result and compare it with the early excerpt. -->
+The Mac smoke test used a shorter prompt than the early review. It shows the revised reviewer finding the rule while preserving the distinction between the manufacturer’s documentation and checks I still need to make on my guitar. [Mac smoke-test transcript excerpt](DEMONSTRATION.md#mac-cli-smoke-test)

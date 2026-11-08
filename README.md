@@ -15,9 +15,9 @@ I’ve made some expensive wiring mistakes while working on my guitars. I wanted
 
 The Fishman pickup’s solder jumper is a good example of why I wanted the lookup. Fishman technical support explained that removing the jumper was relevant to the separate inner/outer coil-selection mod I was considering. For my initial two-push-pull setup, I wanted to leave the jumper alone. The case record gives the agent that context when it reviews the plan.
 
-I ran into a similar problem on Sidequest (Project 2). The live API returned `Category "commercial.cafe" is not supported`, an example of why I want the agent to check against the actual reference for the part or service in use. (Sidequest Project 2 Prompt Log, prompt 20.)
+**Skill motivation from HW6.** I asked, “where is it currently located? and can we test something like "need to dye fretboard," and "doesn't affect inlays"” The combined query still surfaced a staining case. That’s why this checker evaluates each constraint separately and marks claims without enough evidence `UNVERIFIED`. [HW6 BenchMark prompt log](https://github.com/CheezyPegasus/BenchMark-luthiery/blob/main/prompt_log.md#fretboard-query-experiment)
 
-<!-- Add a short quote from the assigned HW3–HW7 prompt logs for each motivation. The Sidequest example is supplementary. -->
+**MCP motivation from HW7.** When the agent was helping me set up the Last Train handoff, I told the agent “current repository is still my 02-120 fork” after it kept giving setup steps for the wrong project. I wanted wiring reviews to start with the actual instrument’s context, so the MCP tool returns a named case with the matching hardware, diagrams, and scope. [HW7 Last Train prompt log](https://github.com/CheezyPegasus/last-train-phase2/blob/main/prompt_log.md#important-prompts-and-scope-verbatim)
 
 ## Setup and verification
 
@@ -45,4 +45,4 @@ See [the demonstration](DEMONSTRATION.md) for run evidence and [the iteration](I
 
 I used ChatGPT and Codex to help build the skill and MCP server, organize the reference cases, troubleshoot setup, and revise this README. I supplied the wiring diagrams and project goals, ran the toolkit in Codex CLI on my Mac, and reviewed the output against the wiring I wanted.
 
-<!-- Add the AI session or prompt-log citation you intend to share for HW8. -->
+The demonstration includes my HW8 prompt and output excerpts from the [RG80F smoke test](DEMONSTRATION.md#mac-cli-smoke-test) and the [Steggy tool call](DEMONSTRATION.md#mac-cli-working-session).
